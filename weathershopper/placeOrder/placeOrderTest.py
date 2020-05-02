@@ -18,11 +18,11 @@ class PlaceOrderTest(unittest.TestCase):
         import rootpath
         path = rootpath.detect()
         if (s['browsers'] == "chrome"):
-            self.browser = webdriver.Chrome(path + '/Documents/sandie/weathershopper/drivers/chromedriver')
+            self.browser = webdriver.Chrome(path + '/Documents/nivya/weathershopper/drivers/chromedriver')
             self.browser.get(s['url'])
             self.browser.maximize_window()
         elif (s['browsers'] == "firefox"):
-            Fp = webdriver.FirefoxProfile(path + '/Documents/sandie/weathershopper/drivers/geckodriver')
+            Fp = webdriver.FirefoxProfile(path + '/Documents/nivya/weathershopper/drivers/geckodriver')
             self.browser = webdriver.Firefox(Fp)
             self.browser.get(s['url'])
             self.browser.maximize_window()
