@@ -9,7 +9,7 @@ class App:
         ssettings = configparser.ConfigParser()
         path = rootpath.detect()
         print(path)
-        readconfigs = ssettings.read(path + "/Documents/sandie/weathershopper/shopperProps.properties")
+        readconfigs = ssettings.read(path + "/Documents/nivya/weathershopper/shopperProps.properties")
         print(readconfigs)
 
         SettingsObject['url'] = ssettings.get("defaults", "pythonanywhere.weathershopper.base.url")
